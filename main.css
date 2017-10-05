@@ -1,0 +1,155 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #fff;
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+h1 a {
+  color: #16B6DF;
+  text-decoration: none;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+a {
+    color: #0083e8;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #0d6c84;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header h1 {
+  margin: 30px 0 20px 100px;
+  width: 300px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 24px;
+}
+
+h1 .italics {
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: normal;
+    font-family: "Baskerville", cursive;
+    vertical-align: text-top;
+    line-height: 14px;
+}
+
+h1 .bigger {
+    font-size: 35px;
+}
+
+.body {
+  max-width: 600px;
+  position: relative;
+  margin: 100px auto;
+}
+
+.body:before {
+  left: -200px;
+  content: '\201c';
+}
+
+.body:after {
+  right: -200px;
+  content: '\201d';
+}
+
+.body:after, .body:before {
+    position: absolute;
+    top: 10px;
+    font-size: 350px;
+    color: #16B6DF;
+    font-family: Arial;
+    font-weight: bold;
+    line-height: 300px;
+}
+
+.quote-content {
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  line-height: 1.3em;
+  margin-bottom: 10px;
+}
+
+.quote-author, .dash {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #16B6DF;
+  font-weight: bold;
+}
+
+.share-quote {
+  display: block;
+  font-size: 28px;
+}
+
+.quote-button-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 40px;
+}
+
+.quote-button-wrapper a {
+  text-decoration: none;
+  color: #16B6DF;
+  border: 3px solid #16B6DF;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  background: #fff;
+}
+
+.footer {
+  color: #B5B6BF;
+  font-size: 14px;
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
